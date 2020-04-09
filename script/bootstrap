@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+set -x
+GCC_VERSION=9.3.0
+
+wget --no-check-certificate -O gcc-${GCC_VERSION}.tar.xz https://ftp.gnu.org/gnu/gcc/gcc-${GCC_VERSION}/gcc-${GCC_VERSION}.tar.xz
+tar -xf gcc-${GCC_VERSION}.tar.xz
+mv gcc-${GCC_VERSION} gcc
