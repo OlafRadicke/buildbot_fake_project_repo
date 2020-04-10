@@ -12,3 +12,5 @@ apt-get build-dep -y  gcc-8-x86-64-linux-gnux32
 apt-get source  gcc-8-x86-64-linux-gnux32
 cd ./gcc-8-cross-ports-9ubuntu0.5/
 dpkg-buildpackage -us -uc
+
+echo "neue Release"
