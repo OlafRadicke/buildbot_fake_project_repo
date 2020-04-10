@@ -4,7 +4,7 @@ set -e
 set -x
 GCC_VERSION=9.3.0
 
-curl https://ftp.gnu.org/gnu/gcc/gcc-${GCC_VERSION}/gcc-${GCC_VERSION}.tar.xz > gcc-${GCC_VERSION}.tar.xz
+curl https://ftp.gnu.org/gnu/gcc/gcc-${GCC_VERSION}/gcc-${GCC_VERSION}.tar.xz > ./gcc-${GCC_VERSION}.tar.xz
 
 #wget --no-check-certificate -O gcc-${GCC_VERSION}.tar.xz https://ftp.gnu.org/gnu/gcc/gcc-${GCC_VERSION}/gcc-${GCC_VERSION}.tar.xz
 tar -xf gcc-${GCC_VERSION}.tar.xz
