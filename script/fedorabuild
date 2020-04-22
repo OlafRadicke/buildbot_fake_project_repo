@@ -1,0 +1,8 @@
+sudo dnf install -y dnf-plugins-core
+sudo dnf install -y rpm-build redhat-rpm-config rpmdevtools gcc 
+
+sudo dnf install -y autoconf  automake ed emacs emacs-el flex fop java-devel libxslt lksctp-tools-devel m4  ncurses-devel systemd-devel unixODBC-devel wxGTK3-devel gcc-c++ pkgconfig openssl-devel make
+
+sudo dnf download --source erlang-compiler
+
+sudo rpmbuild --rebuild ./erlang-22.3.2-1.fc31.src.rpm
